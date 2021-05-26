@@ -4,18 +4,5 @@ app = "ensayo-redis"
 source      = "redis_server"
 destination = "/data"
 
-[[services]]
-internal_port = 6379
-protocol      = "tcp"
-
-  [services.concurrency]
-  hard_limit = 25
-  soft_limit = 20
-
-  [[services.ports]]
-  handlers = []
-  port     = "6379"
-
-  [[services.tcp_checks]]
-  interval = 10000
-  timeout  = 2000
+[experimental]
+private_network = true
