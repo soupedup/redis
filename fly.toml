@@ -1,6 +1,4 @@
-# fly.toml file generated for redis-example on 2020-10-30T20:01:11-05:00
-
-app = "redis-example"
+app = "redis"
 
 [[mounts]]
 source      = "redis_server"
@@ -16,7 +14,7 @@ protocol      = "tcp"
 
   [[services.ports]]
   handlers = []
-  port     = "10000"
+  port     = "6379"
 
   [[services.tcp_checks]]
   interval = 10000
