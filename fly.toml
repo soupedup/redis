@@ -1,4 +1,4 @@
-app = "redis"
+app = "ensayo-redis"
 
 [[mounts]]
 source      = "redis_server"
